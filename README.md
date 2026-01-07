@@ -3,12 +3,18 @@ calibre-tainer
 
 This is a container to run the calibre content server as a standalone application. It's somewhat experimental but it works well enough for my needs. Runs calibre version 8.5 on debian trixie.
 
+```
+docker pull ghcr.io/packrat386/calibre-tainer:latest
+```
+
 ## Configuration
 
 Configured by environment variables
 
 * `CALIBRE_LIBRARY_PATH` - The path for the calibre library to serve. Default is `/srv/calibre/library`
 * `CALIBRE_USERDB_PATH` - The path for the calibre userdb. Default is `/srv/calibre/userdb/users.sqlite`
+
+I recommend that you use a docker volume for those otherwise nothing will persist between runs
 
 ## Scripts
 
