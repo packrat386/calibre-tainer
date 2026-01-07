@@ -6,4 +6,5 @@ calibre-server \
   --auth-mode basic \
   --disable-use-bonjour \
   --disable-use-sendfile \
+  --port 80 \
   "${CALIBRE_LIBRARY_PATH}"
