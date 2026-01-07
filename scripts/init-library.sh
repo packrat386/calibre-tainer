@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-calibredb --with-library /srv/calibre/library list
+calibredb --with-library "${CALIBRE_LIBRARY_PATH}" list
